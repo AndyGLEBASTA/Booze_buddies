@@ -30,6 +30,10 @@ public class MainController {
     public String index() {
         return "login";
     }
+    @GetMapping(value = {"/index"})
+    public String index() {
+        return "login";
+    }
 
     @GetMapping("/admin")
     public String admin( Model model) {
